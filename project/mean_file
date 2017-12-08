@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+# Compute the mean image from the imagenet training lmdb
+# N.B. this is available in data/ilsvrc12
+EXAMPLE=/home/nvidia/project/
+DATA=/home/nvidia/project/
+TOOLS=/home/nvidia/caffe/tools # //Path to caffe build tools
+$TOOLS/compute_image_mean $EXAMPLE/train_lmdb/ \
+$DATA/meanfile.binaryproto
+echo "Done."

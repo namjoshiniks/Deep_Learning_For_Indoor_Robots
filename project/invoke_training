@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+set -e
+~/caffe/tools/caffe train \
+--solver=/home/nvidia/caffe/models/bvlc_reference_caffenet/solver.prototxt $@
